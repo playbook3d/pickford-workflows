@@ -2622,80 +2622,6 @@
       ]
     },
     {
-      "id": 732,
-      "type": "VHS_VideoCombine",
-      "pos": [
-        6890,
-        6530
-      ],
-      "size": [
-        1597.72802734375,
-        1211.4720458984375
-      ],
-      "flags": {},
-      "order": 166,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 1185
-        },
-        {
-          "name": "audio",
-          "type": "AUDIO",
-          "link": null,
-          "shape": 7
-        },
-        {
-          "name": "meta_batch",
-          "type": "VHS_BatchManager",
-          "link": null,
-          "shape": 7
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null,
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_VideoCombine"
-      },
-      "widgets_values": {
-        "frame_rate": 8,
-        "loop_count": 0,
-        "filename_prefix": "AnimateDiff",
-        "format": "video/h265-mp4",
-        "pix_fmt": "yuv420p10le",
-        "crf": 22,
-        "save_metadata": true,
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "AnimateDiff_00230.mp4",
-            "subfolder": "",
-            "type": "output",
-            "format": "video/h265-mp4",
-            "frame_rate": 8
-          },
-          "muted": false
-        }
-      }
-    },
-    {
       "id": 846,
       "type": "VAELoader",
       "pos": [
@@ -8332,6 +8258,80 @@
       ],
       "color": "#223",
       "bgcolor": "#335"
+    },
+    {
+      "id": 732,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        6890,
+        6530
+      ],
+      "size": [
+        1597.72802734375,
+        1211.4720458984375
+      ],
+      "flags": {},
+      "order": 166,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1185
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "meta_batch",
+          "type": "VHS_BatchManager",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 24,
+        "loop_count": 0,
+        "filename_prefix": "AnimateDiff",
+        "format": "video/h265-mp4",
+        "pix_fmt": "yuv420p10le",
+        "crf": 22,
+        "save_metadata": true,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "AnimateDiff_00230.mp4",
+            "subfolder": "",
+            "type": "output",
+            "format": "video/h265-mp4",
+            "frame_rate": 8
+          },
+          "muted": false
+        }
+      }
     }
   ],
   "links": [
@@ -10308,10 +10308,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6115909044841479,
+      "scale": 0.23579476910000077,
       "offset": [
-        -489.7617568365772,
-        -402.9356935549047
+        -1731.376399280721,
+        -4813.3777434052645
       ]
     }
   },

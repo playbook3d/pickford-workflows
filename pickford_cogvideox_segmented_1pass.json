@@ -122,17 +122,17 @@
           "links": null
         },
         {
-          "name": "768 width",
+          "name": "width",
           "type": "INT",
           "links": null
         },
         {
-          "name": "432 height",
+          "name": "height",
           "type": "INT",
           "links": null
         },
         {
-          "name": "29 count",
+          "name": "count",
           "type": "INT",
           "links": [
             1091
@@ -3842,80 +3842,6 @@
       ]
     },
     {
-      "id": 732,
-      "type": "VHS_VideoCombine",
-      "pos": [
-        4450,
-        4040
-      ],
-      "size": [
-        1597.72802734375,
-        1211.4720458984375
-      ],
-      "flags": {},
-      "order": 83,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 1185
-        },
-        {
-          "name": "audio",
-          "type": "AUDIO",
-          "link": null,
-          "shape": 7
-        },
-        {
-          "name": "meta_batch",
-          "type": "VHS_BatchManager",
-          "link": null,
-          "shape": 7
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null,
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_VideoCombine"
-      },
-      "widgets_values": {
-        "frame_rate": 8,
-        "loop_count": 0,
-        "filename_prefix": "AnimateDiff",
-        "format": "video/h265-mp4",
-        "pix_fmt": "yuv420p10le",
-        "crf": 22,
-        "save_metadata": true,
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "AnimateDiff_00227.mp4",
-            "subfolder": "",
-            "type": "output",
-            "format": "video/h265-mp4",
-            "frame_rate": 8
-          },
-          "muted": false
-        }
-      }
-    },
-    {
       "id": 831,
       "type": "PreviewBridge",
       "pos": [
@@ -4232,6 +4158,80 @@
         "",
         "The image is a split screen of a man and a woman in a kitchen. The man is on the left side of the image, wearing a brown t-shirt and has short, spiky hair. He is gesturing with his hands as if he is explaining something. The woman on the right side is sitting at a table with a glass of orange juice in front of her. She has red hair and is looking at the camera with a serious expression. The background shows a window with potted plants and a shelf with various kitchen items."
       ]
+    },
+    {
+      "id": 732,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        4583.4736328125,
+        4082.34765625
+      ],
+      "size": [
+        1597.72802734375,
+        1211.4720458984375
+      ],
+      "flags": {},
+      "order": 83,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1185
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "meta_batch",
+          "type": "VHS_BatchManager",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 24,
+        "loop_count": 0,
+        "filename_prefix": "AnimateDiff",
+        "format": "video/h265-mp4",
+        "pix_fmt": "yuv420p10le",
+        "crf": 22,
+        "save_metadata": true,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "AnimateDiff_00227.mp4",
+            "subfolder": "",
+            "type": "output",
+            "format": "video/h265-mp4",
+            "frame_rate": 8
+          },
+          "muted": false
+        }
+      }
     }
   ],
   "links": [
@@ -5200,10 +5200,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.19487171000000078,
+      "scale": 0.3452271214393106,
       "offset": [
-        1517.2674210128228,
-        334.4900786977362
+        -1540.054050548947,
+        -2630.29868554073
       ]
     }
   },
