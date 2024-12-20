@@ -1,8 +1,8 @@
 # Workflows Overview
 
-This is an overview of ComfyUI workflows delivered to Pickford for use in the Unity SDK. 
+This is an overview of ComfyUI workflows delivered to Pickford for use in the [Unity SDK.](https://docs.playbook3d.com/api-reference/sdk-libraries/sdk-unity)
 
-> API Key: 
+> API Key: ec2194a1-d18f-406a-a80c-b2981404bd8d
 
 ## SDXL Image
 
