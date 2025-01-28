@@ -14,7 +14,7 @@
         58
       ],
       "flags": {},
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -52,7 +52,7 @@
         126
       ],
       "flags": {},
-      "order": 26,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -110,7 +110,7 @@
         126
       ],
       "flags": {},
-      "order": 27,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -402,7 +402,7 @@
         26
       ],
       "flags": {},
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -484,7 +484,7 @@
         126
       ],
       "flags": {},
-      "order": 25,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -544,7 +544,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 32,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -593,7 +593,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 33,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -642,7 +642,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 34,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -691,7 +691,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 35,
+      "order": 36,
       "mode": 0,
       "inputs": [
         {
@@ -776,7 +776,7 @@
         126
       ],
       "flags": {},
-      "order": 28,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -1013,7 +1013,7 @@
       ],
       "flags": {},
       "order": 52,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "mask",
@@ -1042,7 +1042,7 @@
       ],
       "flags": {},
       "order": 51,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "mask",
@@ -1071,7 +1071,7 @@
       ],
       "flags": {},
       "order": 50,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "mask",
@@ -1100,7 +1100,7 @@
       ],
       "flags": {},
       "order": 49,
-      "mode": 0,
+      "mode": 4,
       "inputs": [
         {
           "name": "mask",
@@ -2275,48 +2275,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 61,
-      "type": "Playbook Text",
-      "pos": [
-        -3530,
-        -1010
-      ],
-      "size": [
-        400,
-        200
-      ],
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [
-            223
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "trigger_words",
-          "type": "STRING",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Playbook Text"
-      },
-      "widgets_values": [
-        "scene_prompt",
-        "Scene Prompt",
-        "8k, photoreal, extremely high detail",
-        ""
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 109,
       "type": "Reroute",
       "pos": [
@@ -2433,51 +2391,6 @@
       }
     },
     {
-      "id": 81,
-      "type": "PreviewBridge",
-      "pos": [
-        -3133.506103515625,
-        278.1602783203125
-      ],
-      "size": [
-        315,
-        338
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 182
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            209
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewBridge"
-      },
-      "widgets_values": [
-        "$81-0",
-        false,
-        "never"
-      ]
-    },
-    {
       "id": 178,
       "type": "Playbook Seed",
       "pos": [
@@ -2489,7 +2402,7 @@
         130
       ],
       "flags": {},
-      "order": 11,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2524,7 +2437,7 @@
         82
       ],
       "flags": {},
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -2550,51 +2463,6 @@
       "widgets_values": [
         "e650d523-f445-4b4e-8b0e-e0b76716f675",
         "4727e867-8eca-4900-ac36-2503b17e93fb"
-      ]
-    },
-    {
-      "id": 72,
-      "type": "PreviewBridge",
-      "pos": [
-        -3139.721923828125,
-        824.7628173828125
-      ],
-      "size": [
-        315,
-        338
-      ],
-      "flags": {},
-      "order": 29,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 175
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            173
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewBridge"
-      },
-      "widgets_values": [
-        "$72-0",
-        false,
-        "never"
       ]
     },
     {
@@ -2656,7 +2524,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        547457129229659,
+        83539758307102,
         "randomize",
         25,
         1,
@@ -2677,7 +2545,7 @@
         266
       ],
       "flags": {},
-      "order": 36,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -2748,6 +2616,138 @@
         0,
         0,
         "center"
+      ]
+    },
+    {
+      "id": 61,
+      "type": "Playbook Text",
+      "pos": [
+        -3530,
+        -1010
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            223
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Playbook Text"
+      },
+      "widgets_values": [
+        "scene_prompt",
+        "Scene Prompt",
+        "8k, ((photoreal)), extremely high detail, masterpiece",
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 81,
+      "type": "PreviewBridge",
+      "pos": [
+        -3133.506103515625,
+        278.1602783203125
+      ],
+      "size": [
+        315,
+        338
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 182
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            209
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewBridge"
+      },
+      "widgets_values": [
+        "$81-0",
+        false,
+        "never"
+      ]
+    },
+    {
+      "id": 72,
+      "type": "PreviewBridge",
+      "pos": [
+        -3139.721923828125,
+        824.7628173828125
+      ],
+      "size": [
+        315,
+        338
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 175
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            173
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewBridge"
+      },
+      "widgets_values": [
+        "$72-0",
+        false,
+        "never"
       ]
     }
   ],
@@ -3397,10 +3397,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.7247295000000008,
+      "scale": 0.30735605491428364,
       "offset": [
-        4166.9510942445795,
-        297.02979563127076
+        3979.587462668059,
+        1006.099476725557
       ]
     },
     "groupNodes": {},

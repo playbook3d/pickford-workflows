@@ -17,3 +17,7 @@ This workflow takes a prompt and render passes captured from Unity and outputs a
 ## CogVideoX 3D to Video Segmented
 
 This workflow takes 4 segmented mask prompts, a scene prompt, and render passes captured from Unity and outputs a rendered video using an SDXL reference image. To run this workflow via Unity SDK, select the workflow named `pickford_cogvideox_3D2video_segmented`.
+
+## CogVideoX AnimateDiff 3D to Video Segmented
+
+This workflow takes 4 segmented mask prompts, a scene prompt, and render passes captured from Unity and outputs a rendered video using an SDXL reference image and SDXL AnimateDiff. To run this workflow via Unity SDK, select the workflow named `pickford_cogvideox_animatediff_3D2video_segmented`.
