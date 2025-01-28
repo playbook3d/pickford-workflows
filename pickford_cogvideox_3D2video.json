@@ -1,6 +1,6 @@
 {
-  "last_node_id": 772,
-  "last_link_id": 1224,
+  "last_node_id": 773,
+  "last_link_id": 1225,
   "nodes": [
     {
       "id": 705,
@@ -14,7 +14,7 @@
         198
       ],
       "flags": {},
-      "order": 21,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -106,7 +106,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 16,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -157,7 +157,7 @@
         168.4154052734375
       ],
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -222,7 +222,8 @@
       },
       "widgets_values": [
         "google_t5xxl_fp8_e4m3fn.safetensors",
-        "sd3"
+        "sd3",
+        "default"
       ]
     },
     {
@@ -237,7 +238,7 @@
         26
       ],
       "flags": {},
-      "order": 5,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -276,7 +277,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -322,7 +323,7 @@
         102
       ],
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -365,7 +366,7 @@
         26
       ],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -401,7 +402,7 @@
         194
       ],
       "flags": {},
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -456,7 +457,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -538,7 +539,7 @@
         238
       ],
       "flags": {},
-      "order": 4,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -608,7 +609,7 @@
         26
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -642,7 +643,7 @@
       ],
       "size": [
         363.4464416503906,
-        58
+        82
       ],
       "flags": {},
       "order": 2,
@@ -662,7 +663,8 @@
         "Node name for S&R": "Playbook Beauty Sequence"
       },
       "widgets_values": [
-        "34da58fe-737d-469d-9162-22a54a5ffbed"
+        "34da58fe-737d-469d-9162-22a54a5ffbed",
+        ""
       ],
       "color": "#223",
       "bgcolor": "#335"
@@ -681,7 +683,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 9,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -737,7 +739,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 18,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -819,7 +821,7 @@
         251.5436248779297
       ],
       "flags": {},
-      "order": 12,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -903,7 +905,7 @@
         26
       ],
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -942,7 +944,7 @@
         58
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -969,6 +971,207 @@
       ]
     },
     {
+      "id": 767,
+      "type": "PreviewBridge",
+      "pos": [
+        1210,
+        3430
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1190
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1191
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewBridge"
+      },
+      "widgets_values": [
+        "$767-0",
+        false,
+        "never"
+      ]
+    },
+    {
+      "id": 772,
+      "type": "PreviewBridge",
+      "pos": [
+        1652.7513427734375,
+        4524.55712890625
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1201
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1199
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewBridge"
+      },
+      "widgets_values": [
+        "$772-0",
+        false,
+        "never"
+      ]
+    },
+    {
+      "id": 536,
+      "type": "Playbook Text",
+      "pos": [
+        610,
+        3552
+      ],
+      "size": [
+        460.4746398925781,
+        264.76153564453125
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            1197
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "trigger_words",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "Scene Prompt",
+      "properties": {
+        "Node name for S&R": "Playbook Text"
+      },
+      "widgets_values": [
+        "scene_prompt",
+        "Scene Prompt",
+        "The image shows a young man and a young woman in a living room. The man is on the left side of the image, wearing a brown t-shirt and has a beard. He is standing in front of a large window with a view of the ocean and mountains in the background. The woman is standing next to him, with her arms stretched out to the sides and a smile on her face. She has long red hair and is wearing a white dress. There are several potted plants scattered around the room, adding a touch of greenery to the space.",
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 732,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        4523.45361328125,
+        3739.867919921875
+      ],
+      "size": [
+        1597.72802734375,
+        310
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1185
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "meta_batch",
+          "type": "VHS_BatchManager",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": null,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_VideoCombine"
+      },
+      "widgets_values": {
+        "frame_rate": 24,
+        "loop_count": 0,
+        "filename_prefix": "AnimateDiff",
+        "format": "video/h265-mp4",
+        "pix_fmt": "yuv420p10le",
+        "crf": 22,
+        "save_metadata": true,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {},
+          "muted": false
+        }
+      }
+    },
+    {
       "id": 722,
       "type": "CogVideoSampler",
       "pos": [
@@ -980,7 +1183,7 @@
         595.5376586914062
       ],
       "flags": {},
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1041,6 +1244,20 @@
           "widget": {
             "name": "num_frames"
           }
+        },
+        {
+          "name": "feta_args",
+          "type": "FETAARGS",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 1225,
+          "widget": {
+            "name": "seed"
+          }
         }
       ],
       "outputs": [
@@ -1072,203 +1289,39 @@
       ]
     },
     {
-      "id": 767,
-      "type": "PreviewBridge",
+      "id": 773,
+      "type": "Playbook Seed",
       "pos": [
-        1210,
-        3430
+        686.7374877929688,
+        3234.291748046875
       ],
       "size": [
         315,
-        314
+        130
       ],
       "flags": {},
-      "order": 6,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 1190
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            1191
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewBridge"
-      },
-      "widgets_values": [
-        "$767-0",
-        false
-      ]
-    },
-    {
-      "id": 772,
-      "type": "PreviewBridge",
-      "pos": [
-        1652.7513427734375,
-        4524.55712890625
-      ],
-      "size": [
-        315,
-        314
-      ],
-      "flags": {},
-      "order": 17,
-      "mode": 4,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 1201
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            1199
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewBridge"
-      },
-      "widgets_values": [
-        "$772-0",
-        false
-      ]
-    },
-    {
-      "id": 536,
-      "type": "Playbook Text",
-      "pos": [
-        610,
-        3552
-      ],
-      "size": [
-        460.4746398925781,
-        264.76153564453125
-      ],
-      "flags": {},
-      "order": 3,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
         {
-          "name": "Text",
-          "type": "STRING",
+          "name": "seed",
+          "type": "INT",
           "links": [
-            1197
+            1225
           ],
           "slot_index": 0
-        },
-        {
-          "name": "Trigger Words",
-          "type": "STRING",
-          "links": null
         }
       ],
-      "title": "Scene Prompt",
       "properties": {
-        "Node name for S&R": "Playbook Text"
+        "Node name for S&R": "Playbook Seed"
       },
       "widgets_values": [
-        "scene_prompt",
-        "Scene Prompt",
-        "The image shows a young man and a young woman in a living room. The man is on the left side of the image, wearing a brown t-shirt and has a beard. He is standing in front of a large window with a view of the ocean and mountains in the background. The woman is standing next to him, with her arms stretched out to the sides and a smile on her face. She has long red hair and is wearing a white dress. There are several potted plants scattered around the room, adding a touch of greenery to the space.",
-        ""
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 732,
-      "type": "VHS_VideoCombine",
-      "pos": [
-        4523.45361328125,
-        3739.867919921875
-      ],
-      "size": [
-        1597.72802734375,
-        310
-      ],
-      "flags": {},
-      "order": 23,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 1185
-        },
-        {
-          "name": "audio",
-          "type": "AUDIO",
-          "link": null,
-          "shape": 7
-        },
-        {
-          "name": "meta_batch",
-          "type": "VHS_BatchManager",
-          "link": null,
-          "shape": 7
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null,
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_VideoCombine"
-      },
-      "widgets_values": {
-        "frame_rate": 24,
-        "loop_count": 0,
-        "filename_prefix": "AnimateDiff",
-        "format": "video/h265-mp4",
-        "pix_fmt": "yuv420p10le",
-        "crf": 22,
-        "save_metadata": true,
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {},
-          "muted": false
-        }
-      }
+        "seed",
+        "Seed",
+        534354,
+        "Fixed"
+      ]
     }
   ],
   "links": [
@@ -1503,18 +1556,39 @@
       772,
       0,
       "IMAGE"
+    ],
+    [
+      1225,
+      773,
+      0,
+      722,
+      11,
+      "INT"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6115909044841464,
+      "scale": 0.7972024500000015,
       "offset": [
-        -3096.831213478014,
-        -2999.0732539775167
+        -495.3327100348187,
+        -2957.4615437115194
       ]
-    }
+    },
+    "node_versions": {
+      "comfyui-cogvideoxwrapper": "5bca0548d924b5114a17061bf0056d7c58ad1aea",
+      "ComfyUI-KJNodes": "5b8d419c6f9c2ab6559a5758f7f504cb8b3a8412",
+      "comfy-core": "0.3.10",
+      "ComfyUI-Frame-Interpolation": "c336f7184cb1ac1243381e725fea1ad2c0a10c09",
+      "ComfyUI-VideoHelperSuite": "c47b10ca1798b4925ff5a5f07d80c51ca80a837d",
+      "playbook3d-comfyui-nodes": "614c6830117c7bef592f57b422969fcbfd81c769",
+      "comfyui_controlnet_aux": "5a049bde9cc117dafc327cded156459289097ea1",
+      "ComfyUI-Impact-Pack": "70d0540895e5eb15b672db65b4c24662127d0f6e"
+    },
+    "ue_links": [],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0
   },
   "version": 0.4
 }
