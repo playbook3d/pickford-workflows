@@ -1,274 +1,20 @@
 {
-  "last_node_id": 37,
-  "last_link_id": 69,
+  "last_node_id": 50,
+  "last_link_id": 88,
   "nodes": [
-    {
-      "id": 18,
-      "type": "VHS_LoadVideo",
-      "pos": [
-        5385.88720703125,
-        2145.11376953125
-      ],
-      "size": [
-        794.1878051757812,
-        711.4806518554688
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "meta_batch",
-          "type": "VHS_BatchManager",
-          "link": null,
-          "shape": 7
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null,
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            68
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "frame_count",
-          "type": "INT",
-          "links": [],
-          "slot_index": 1
-        },
-        {
-          "name": "audio",
-          "type": "AUDIO",
-          "links": null
-        },
-        {
-          "name": "video_info",
-          "type": "VHS_VIDEOINFO",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_LoadVideo"
-      },
-      "widgets_values": {
-        "video": "01_VIDGEN_00189.mp4",
-        "force_rate": 60,
-        "force_size": "Disabled",
-        "custom_width": 512,
-        "custom_height": 512,
-        "frame_load_cap": 0,
-        "skip_first_frames": 0,
-        "select_every_nth": 1,
-        "choose video to upload": "image",
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "frame_load_cap": 0,
-            "skip_first_frames": 0,
-            "force_rate": 60,
-            "filename": "01_VIDGEN_00189.mp4",
-            "type": "input",
-            "format": "video/mp4",
-            "select_every_nth": 1
-          },
-          "muted": false
-        }
-      }
-    },
-    {
-      "id": 27,
-      "type": "FILM VFI",
-      "pos": [
-        6990,
-        2480
-      ],
-      "size": [
-        443.4000244140625,
-        126
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "frames",
-          "type": "IMAGE",
-          "link": 36
-        },
-        {
-          "name": "optional_interpolation_states",
-          "type": "INTERPOLATION_STATES",
-          "link": null,
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            37
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "FILM VFI"
-      },
-      "widgets_values": [
-        "film_net_fp32.pt",
-        10,
-        2
-      ]
-    },
-    {
-      "id": 23,
-      "type": "CombineImageBatch",
-      "pos": [
-        6700,
-        2520
-      ],
-      "size": [
-        210,
-        46
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images_a",
-          "type": "IMAGE",
-          "link": 69
-        },
-        {
-          "name": "images_b",
-          "type": "IMAGE",
-          "link": 68
-        }
-      ],
-      "outputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "links": [
-            36
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CombineImageBatch"
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 2,
-      "type": "VHS_LoadVideo",
-      "pos": [
-        5389.2841796875,
-        2945.80078125
-      ],
-      "size": [
-        780.893310546875,
-        704.0025024414062
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "meta_batch",
-          "type": "VHS_BatchManager",
-          "link": null,
-          "shape": 7
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null,
-          "shape": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            69
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "frame_count",
-          "type": "INT",
-          "links": [],
-          "slot_index": 1
-        },
-        {
-          "name": "audio",
-          "type": "AUDIO",
-          "links": null
-        },
-        {
-          "name": "video_info",
-          "type": "VHS_VIDEOINFO",
-          "links": [],
-          "slot_index": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_LoadVideo"
-      },
-      "widgets_values": {
-        "video": "01_VIDGEN_00188.mp4",
-        "force_rate": 0,
-        "force_size": "Disabled",
-        "custom_width": 512,
-        "custom_height": 512,
-        "frame_load_cap": 0,
-        "skip_first_frames": 0,
-        "select_every_nth": 1,
-        "choose video to upload": "image",
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "frame_load_cap": 0,
-            "skip_first_frames": 0,
-            "force_rate": 0,
-            "filename": "01_VIDGEN_00188.mp4",
-            "type": "input",
-            "format": "video/mp4",
-            "select_every_nth": 1
-          },
-          "muted": false
-        }
-      }
-    },
     {
       "id": 20,
       "type": "VHS_VideoCombine",
-      "pos": [
-        7530,
-        2360
-      ],
-      "size": [
-        567.0513305664062,
-        631.7163696289062
-      ],
+      "pos": {
+        "0": 7568.03125,
+        "1": 2358.110107421875
+      },
+      "size": {
+        "0": 1313.399169921875,
+        "1": 1075.5369873046875
+      },
       "flags": {},
-      "order": 4,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -305,40 +51,427 @@
       "properties": {
         "Node name for S&R": "VHS_VideoCombine"
       },
-      "widgets_values": {
-        "frame_rate": 24,
-        "loop_count": 0,
-        "filename_prefix": "AnimateDiff",
-        "format": "video/h264-mp4",
-        "pix_fmt": "yuv420p",
-        "crf": 19,
-        "save_metadata": true,
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "AnimateDiff_00255.mp4",
-            "subfolder": "",
-            "type": "output",
-            "format": "video/h264-mp4",
-            "frame_rate": 24
-          },
-          "muted": false
+      "widgets_values": [
+        8,
+        0,
+        "AnimateDiff",
+        "image/gif",
+        false,
+        true
+      ]
+    },
+    {
+      "id": 40,
+      "type": "VHS_MergeImages",
+      "pos": {
+        "0": 6483.6240234375,
+        "1": 2445.683349609375
+      },
+      "size": {
+        "0": 349.3506774902344,
+        "1": 126
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images_A",
+          "type": "IMAGE",
+          "link": 80
+        },
+        {
+          "name": "images_B",
+          "type": "IMAGE",
+          "link": 81
         }
-      }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            72
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VHS_MergeImages"
+      },
+      "widgets_values": [
+        "match A",
+        "nearest-exact",
+        "disabled"
+      ]
+    },
+    {
+      "id": 41,
+      "type": "Playbook Number",
+      "pos": {
+        "0": 4842.2119140625,
+        "1": 2083.671142578125
+      },
+      "size": {
+        "0": 327.5999755859375,
+        "1": 154
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "number",
+          "type": "INT",
+          "links": [
+            82
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Playbook Number"
+      },
+      "widgets_values": [
+        "video_a_batch_size",
+        "Video A Batch Size",
+        0,
+        100,
+        24
+      ]
+    },
+    {
+      "id": 45,
+      "type": "Playbook Video",
+      "pos": {
+        "0": 5673.4150390625,
+        "1": 2307.1748046875
+      },
+      "size": {
+        "0": 315,
+        "1": 178
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "default_value",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "select_every_nth",
+          "type": "INT",
+          "link": 83,
+          "widget": {
+            "name": "select_every_nth"
+          }
+        },
+        {
+          "name": "frame_load_cap",
+          "type": "INT",
+          "link": 82,
+          "widget": {
+            "name": "frame_load_cap"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            80
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Playbook Video"
+      },
+      "widgets_values": [
+        "video_a",
+        "Video A",
+        0,
+        0,
+        1,
+        "https://playbook-user-uploaded-files.s3.us-east-2.amazonaws.com/google_108461719248237461869/9d3ffa0a-069b-435a-8957-707c3466f111_45?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAY4KG3I456XJLQ4QD%2F20250130%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20250130T224553Z&X-Amz-Expires=86400&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMiJHMEUCIFmukSV0p6j8mkZKYC2UgIVp1LfHWxvmc3G%2Bp1cL9g3fAiEAvTNtYrUdYmLPy8XI1DldUaiWVpN29Cmyq44hz9JpgHgqwwUIr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgw2MTA1NzA4MTUyOTEiDH3OyT0bexcILInvtCqXBWUmqI19mQu2EZcQ2b5W%2FdgD%2FB1Rz2iq9XrIoq48IU7RCLlqvH8JakaKIkY61l%2FbOPfZJKyyLUuFE%2FKyqWKCboClytsyDhxno%2Fa0tfQCAFd2OSN0MZC9D3LZh%2FYaFKWeqAJQf8PVJ%2F%2B9n4CJjOloa1%2BAuDDKkgXt8mnx1rs85LYueXGAg%2B%2F93a7QnFJsbgplOOnRqphQzYyO7y%2Bk5QsWSwnm8F5NiHBv5tHmPSqbbpVz%2BBIi95Yl2CrcFdecDsOlyx4CN9%2FEv7IVE5zDzlV7Fd7XpqrOG1YHnUYNa9xf%2FJ0SVCOY8FX1JQMoW%2F%2BksKu6bRf7lM4JvVnUbWhkdggiQQZmnUw9r5mGIxb0l5H2XK2%2BsVMQ4kC%2BGi7nYAjGM%2B1qd6zHO7e3QK7%2FRGRK%2BYdH9kWC%2FwIfO4CUVVmATy9ATBKmOnzK0J%2B%2B2okjYjcOxywVrzDJTNheQ5IPhXTL%2FCLLjWFOM5eyNm%2F5GeTaUJmJ7VtFymXKRIA4et98paAEIKQJHu0uva9KsAkcfzRKLaErhQE8oDVeXl5xeAvpkbB9heyYTpYVGOLfZ0ke9mzWgeBv3RQJo9wJ0y1OkCXlGHDd%2BC6QZ7M8KVnMjPghEnXDCu%2BlAq8RG7XQiHfHGmANvSLERY40bgaOU3Y26qHxD%2B%2FZ6SnQwpxlLQCmRyidqTZ08JzBsCGcPIVkS98e9u7mAqreXR4dNdRxVpS5ms3uIT%2FRdRmyLCeBYpMUy8Ex%2B0bHi1Z4gXbARRGp7EZFW5zep7e0kKrRkUIuywDfNPUR8YODnjklrz1ltXBqSGT5Ow8b8ll1igS4%2FhO12nPAIm9RgaD43RnxdIx7V%2FIFjBSX9i%2Bq2Yb%2Fzyjwwn2XX2rdCBx1827JAO3L1xI56DCR4e%2B8BjqxAcMK%2Fmgrma7MAPL3yjtvPJLBFlJbzMY3M7sOgRoFcZFSvukPS%2Bc6x6cYkFuwh%2FemmFxOA6l5DlxlskeRVod7uy9SenUh4VlZBh6h5CtLk76KcCLVbYCMQMTIGgshhfjAcuesNkgChN8OnB6umy55oKbJh7R3YbQ%2FeN5ljZAdYPpO0m55WJ7JIofYAOpwZnbl5E1n5SO%2FQp8aY8kDlWW4C3VmvqCIXClF1kvqJvQIcBdd%2FA%3D%3D&X-Amz-Signature=5aacbc042a17d8409ff933e13ad5b3bd8d0c78e169ee9f7aaa139f4e5cb208d4&X-Amz-SignedHeaders=host&x-id=GetObject"
+      ]
+    },
+    {
+      "id": 46,
+      "type": "Playbook Video",
+      "pos": {
+        "0": 5680.62158203125,
+        "1": 2563.732666015625
+      },
+      "size": {
+        "0": 315,
+        "1": 178
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "default_value",
+          "type": "IMAGE",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "frame_load_cap",
+          "type": "INT",
+          "link": 84,
+          "widget": {
+            "name": "frame_load_cap"
+          }
+        },
+        {
+          "name": "select_every_nth",
+          "type": "INT",
+          "link": 85,
+          "widget": {
+            "name": "select_every_nth"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            81
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Playbook Video"
+      },
+      "widgets_values": [
+        "video_b",
+        "Video B",
+        0,
+        0,
+        1,
+        "https://playbook-user-uploaded-files.s3.us-east-2.amazonaws.com/google_108461719248237461869/9d3ffa0a-069b-435a-8957-707c3466f111_46?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAY4KG3I456XJLQ4QD%2F20250130%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20250130T224600Z&X-Amz-Expires=86400&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMiJHMEUCIFmukSV0p6j8mkZKYC2UgIVp1LfHWxvmc3G%2Bp1cL9g3fAiEAvTNtYrUdYmLPy8XI1DldUaiWVpN29Cmyq44hz9JpgHgqwwUIr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgw2MTA1NzA4MTUyOTEiDH3OyT0bexcILInvtCqXBWUmqI19mQu2EZcQ2b5W%2FdgD%2FB1Rz2iq9XrIoq48IU7RCLlqvH8JakaKIkY61l%2FbOPfZJKyyLUuFE%2FKyqWKCboClytsyDhxno%2Fa0tfQCAFd2OSN0MZC9D3LZh%2FYaFKWeqAJQf8PVJ%2F%2B9n4CJjOloa1%2BAuDDKkgXt8mnx1rs85LYueXGAg%2B%2F93a7QnFJsbgplOOnRqphQzYyO7y%2Bk5QsWSwnm8F5NiHBv5tHmPSqbbpVz%2BBIi95Yl2CrcFdecDsOlyx4CN9%2FEv7IVE5zDzlV7Fd7XpqrOG1YHnUYNa9xf%2FJ0SVCOY8FX1JQMoW%2F%2BksKu6bRf7lM4JvVnUbWhkdggiQQZmnUw9r5mGIxb0l5H2XK2%2BsVMQ4kC%2BGi7nYAjGM%2B1qd6zHO7e3QK7%2FRGRK%2BYdH9kWC%2FwIfO4CUVVmATy9ATBKmOnzK0J%2B%2B2okjYjcOxywVrzDJTNheQ5IPhXTL%2FCLLjWFOM5eyNm%2F5GeTaUJmJ7VtFymXKRIA4et98paAEIKQJHu0uva9KsAkcfzRKLaErhQE8oDVeXl5xeAvpkbB9heyYTpYVGOLfZ0ke9mzWgeBv3RQJo9wJ0y1OkCXlGHDd%2BC6QZ7M8KVnMjPghEnXDCu%2BlAq8RG7XQiHfHGmANvSLERY40bgaOU3Y26qHxD%2B%2FZ6SnQwpxlLQCmRyidqTZ08JzBsCGcPIVkS98e9u7mAqreXR4dNdRxVpS5ms3uIT%2FRdRmyLCeBYpMUy8Ex%2B0bHi1Z4gXbARRGp7EZFW5zep7e0kKrRkUIuywDfNPUR8YODnjklrz1ltXBqSGT5Ow8b8ll1igS4%2FhO12nPAIm9RgaD43RnxdIx7V%2FIFjBSX9i%2Bq2Yb%2Fzyjwwn2XX2rdCBx1827JAO3L1xI56DCR4e%2B8BjqxAcMK%2Fmgrma7MAPL3yjtvPJLBFlJbzMY3M7sOgRoFcZFSvukPS%2Bc6x6cYkFuwh%2FemmFxOA6l5DlxlskeRVod7uy9SenUh4VlZBh6h5CtLk76KcCLVbYCMQMTIGgshhfjAcuesNkgChN8OnB6umy55oKbJh7R3YbQ%2FeN5ljZAdYPpO0m55WJ7JIofYAOpwZnbl5E1n5SO%2FQp8aY8kDlWW4C3VmvqCIXClF1kvqJvQIcBdd%2FA%3D%3D&X-Amz-Signature=61e5e05b1145ed1cac97d6eae2fb072ea1d4c08aeb287ae1f74a2985bb25a91e&X-Amz-SignedHeaders=host&x-id=GetObject"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "Playbook Number",
+      "pos": {
+        "0": 4849.05517578125,
+        "1": 2336.435546875
+      },
+      "size": {
+        "0": 327.5999755859375,
+        "1": 154
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "number",
+          "type": "INT",
+          "links": [
+            84
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Playbook Number"
+      },
+      "widgets_values": [
+        "video_b_batch_size",
+        "Video B Batch Size",
+        0,
+        100,
+        24
+      ]
+    },
+    {
+      "id": 27,
+      "type": "FILM VFI",
+      "pos": {
+        "0": 6968.5244140625,
+        "1": 2428.364501953125
+      },
+      "size": {
+        "0": 443.4000244140625,
+        "1": 126
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "frames",
+          "type": "IMAGE",
+          "link": 72
+        },
+        {
+          "name": "optional_interpolation_states",
+          "type": "INTERPOLATION_STATES",
+          "link": null,
+          "shape": 7
+        },
+        {
+          "name": "multiplier",
+          "type": "INT",
+          "link": 88,
+          "widget": {
+            "name": "multiplier"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            37
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FILM VFI"
+      },
+      "widgets_values": [
+        "film_net_fp32.pt",
+        10,
+        2
+      ]
+    },
+    {
+      "id": 47,
+      "type": "Playbook Float",
+      "pos": {
+        "0": 4863.77685546875,
+        "1": 2948.4306640625
+      },
+      "size": {
+        "0": 315,
+        "1": 154
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "float",
+          "type": "FLOAT",
+          "links": [
+            87
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Playbook Float"
+      },
+      "widgets_values": [
+        "multiplier",
+        "Multiplier",
+        0,
+        8,
+        2
+      ]
+    },
+    {
+      "id": 50,
+      "type": "CM_FloatToInt",
+      "pos": {
+        "0": 5254.3203125,
+        "1": 2951.384765625
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "FLOAT",
+          "link": 87,
+          "widget": {
+            "name": "a"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            88
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CM_FloatToInt"
+      },
+      "widgets_values": [
+        0
+      ]
+    },
+    {
+      "id": 43,
+      "type": "Playbook Number",
+      "pos": {
+        "0": 4866,
+        "1": 2623
+      },
+      "size": {
+        "0": 327.5999755859375,
+        "1": 154
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "number",
+          "type": "INT",
+          "links": [
+            83,
+            85
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Playbook Number"
+      },
+      "widgets_values": [
+        "skip_nth",
+        "Skip Nth",
+        0,
+        5,
+        2
+      ]
     }
   ],
   "links": [
-    [
-      36,
-      23,
-      0,
-      27,
-      0,
-      "IMAGE"
-    ],
     [
       37,
       27,
@@ -348,32 +481,97 @@
       "IMAGE"
     ],
     [
-      68,
-      18,
+      72,
+      40,
       0,
-      23,
+      27,
+      0,
+      "IMAGE"
+    ],
+    [
+      80,
+      45,
+      0,
+      40,
+      0,
+      "IMAGE"
+    ],
+    [
+      81,
+      46,
+      0,
+      40,
       1,
       "IMAGE"
     ],
     [
-      69,
+      82,
+      41,
+      0,
+      45,
       2,
+      "INT"
+    ],
+    [
+      83,
+      43,
       0,
-      23,
+      45,
+      1,
+      "INT"
+    ],
+    [
+      84,
+      42,
       0,
-      "IMAGE"
+      46,
+      1,
+      "INT"
+    ],
+    [
+      85,
+      43,
+      0,
+      46,
+      2,
+      "INT"
+    ],
+    [
+      87,
+      47,
+      0,
+      50,
+      0,
+      "FLOAT"
+    ],
+    [
+      88,
+      50,
+      0,
+      27,
+      2,
+      "INT"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6115909044841571,
+      "scale": 1.1918176537727234,
       "offset": [
-        -5814.0924403339295,
-        -1949.6758922974336
+        -4578.664666570169,
+        -2320.662732357114
       ]
-    }
+    },
+    "node_versions": {
+      "ComfyUI-VideoHelperSuite": "c47b10ca1798b4925ff5a5f07d80c51ca80a837d",
+      "playbook3d-comfyui-nodes": "614c6830117c7bef592f57b422969fcbfd81c769",
+      "ComfyUI-Frame-Interpolation": "c336f7184cb1ac1243381e725fea1ad2c0a10c09",
+      "ComfyMath": "939bb813f1c0ace959b62f20bb2da47190c4e211"
+    },
+    "ue_links": [],
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0
   },
   "version": 0.4
 }
